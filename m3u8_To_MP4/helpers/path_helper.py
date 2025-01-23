@@ -15,7 +15,7 @@ def updated_resource_path(path, query):
 def resolve_file_name_by_uri(uri):
     # pattern = r"\/+(.*)"
     # file_name = re.findall(pattern=pattern, string=uri)[0]
-    name = uri.split('/')[-1]
+    name = uri.split('/')[-1][:100]
     return calibrate_name(name)
 
 
